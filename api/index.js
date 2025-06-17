@@ -21,7 +21,7 @@ app.use(cors(corsOptions))
 connectDb();
 
 app.use('/api',productRoutes)
-app.use('/apiuser',userRouter)
+app.use('/api',userRouter)
 app.listen(port,()=>{
   console.log(`app listning on port ${port}`)
 });
