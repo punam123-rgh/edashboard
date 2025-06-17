@@ -22,8 +22,7 @@ connectDb();
 
 app.use('/api',productRoutes)
 app.use('/api',userRouter)
-app.listen(port,()=>{
-  console.log(`app listning on port ${port}`)
-});
+
+
 module.exports = app;
 module.exports.handler = serverless(app)
